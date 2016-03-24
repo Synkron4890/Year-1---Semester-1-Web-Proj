@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+	<head>
+	<meta charset="UTF-8">
+	<title>NCI Disability</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+	$(function(){
+	   $('#picture').on('focus mouseenter', function(){
+		$("#slogan").slideDown(300);
+	   });
+	 });
+	 
+	 $(function(){
+	   $('#picture').on('focus mouseleave', function(){
+		$("#slogan").slideUp(300);
+	   });
+	 });
+	 
+	$(document).ready(function(){
+		$('#slogan').hide();
+	});
+
+	$(document).ready(function(){
+		$('#picture').hide();
+	});
+	  
+	$(document).ready(function(){
+		$("#picture").slideDown(3000);
+	  });
+	  
+	function resizeText(multiplier) {
+	parseFloat(multiplier);
+	document.getElementById("mainText").style.fontSize = multiplier + "px";
+	}
+	</script>
+	</head>
+	<body>
+		<div id="nav">
+			<ul>
+				<li><span id="selected"><a href="#">Library Support</a></span></li>
+				<li><a href="academicsupp.html">Academic Support</a></li>
+				<li><a href="assistivetech.html">Assistive Technology</a></li>
+				<li><a href="needs.html">Needs Assessment</a></li>
+				<li><a href="index.html">Main Page</a></li>
+			</ul> 
+		</div>
+
+		<div id="picture">
+			<div id="picture_lib">
+				<div id="slogan">
+					<br/><br/><br/><br/><br/><br/>
+					<p>We are here to guide you</p>
+					<p>&bull;</p>
+					<p>&bull;</p>
+					<p>&bull;</p>
+					<p>&bull;</p>
+					<p>&bull;</p>
+					<p>&bull;</p>
+					<p>&bull;</p>
+					<p>&bull;</p>
+					<p>&bull;</p>
+				</div>
+			</div>	
+		</div>	
+
+		<div id="main">
+			<div id="logo">
+				<img src="img/nciLogo.png" alt="National College of Ireland">
+			</div>
+			
+			<div id="textSize">
+				Text size: 	
+				<span id="SmallText" onclick="resizeText(12)">A</span>
+				<span id="NormalText" onclick="resizeText(14)">A</span>
+				<span id="LargeText" onclick="resizeText(20)">A</span>
+			</div>
+			
+			<div id="mainText">
+				<h1>Library Support</h1>	
+				<p>The key role of the Library is to support students to use all aspects of the library resources to maximize your academic success. Students with certain disabilities (e.g. hearing impaired, visually impaired, mobility difficulty, specific learning difficulty) may require specific additional supports to facilitate equal access to the same resources as other students. This is determined during your Educational Needs Assessment with the Disability Officer. Some of the supports available include: </p>
+				<ul>
+					<li>Extended library loans</li>
+					<li>Access to electronic books</li>
+					<li>Print credit</li>
+					<li>Access to electronic readers</li>
+					<li>Adapted furniture</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="footer">
+			<p>Call Us 1850 221 721&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;email: <a href="mailto:colm.bennett@ncirl.ie?Subject=NCI%20Disability%20page" target="_top">colm.bennett@ncirl</a></p>
+		</div>
+	</body>
+</HTML>

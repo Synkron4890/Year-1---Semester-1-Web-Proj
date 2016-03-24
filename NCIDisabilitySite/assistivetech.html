@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+	<head>
+	<meta charset="UTF-8">
+	<title>NCI Disability</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+	$(function(){
+	   $('#picture').on('focus mouseenter', function(){
+		$("#slogan").slideDown(300);
+	   });
+	 });
+	 
+	 $(function(){
+	   $('#picture').on('focus mouseleave', function(){
+		$("#slogan").slideUp(300);
+	   });
+	 });
+	 
+	$(document).ready(function(){
+		$('#slogan').hide();
+	});
+
+	$(document).ready(function(){
+		$('#picture').hide();
+	});
+	  
+	$(document).ready(function(){
+		$("#picture").slideDown(3000);
+	  });
+	  
+	function resizeText(multiplier) {
+	parseFloat(multiplier);
+	document.getElementById("mainText").style.fontSize = multiplier + "px";
+	}
+	</script>
+	</head>
+	<body>
+		<div id="nav">
+			<ul>
+				<li><a href="librarysupp.html">Library Support</a></li>
+				<li><a href="academicsupp.html">Academic Support</a></li>
+				<li><span id="selected"><a href="#">Assistive Technology</a></span></li>
+				<li><a href="needs.html">Needs Assessment</a></li>
+				<li><a href="index.html">Main Page</a></li>
+			</ul> 
+		</div>
+
+		<div id="picture">	
+			<div id="picture_tech">		
+				<div id="slogan">
+					<br/><br/><br/><br/><br/><br/>
+					<p>We have the technology to help you</p>
+					<p>&bull;</p>
+					<p>&bull;</p>
+					<p>&bull;</p>
+					<p>&bull;</p>
+					<p>&bull;</p>
+					<p>&bull;</p>
+					<p>&bull;</p>
+					<p>&bull;</p>
+					<p>&bull;</p>
+				</div>
+			</div>	
+		</div>	
+
+		<div id="main">
+			<div id="logo">
+				<img src="img/nciLogo.png" alt="National College of Ireland">
+			</div>
+			<div id="textSize">
+				Text size: 	
+				<span id="SmallText" onclick="resizeText(12)">A</span>
+				<span id="NormalText" onclick="resizeText(14)">A</span>
+				<span id="LargeText" onclick="resizeText(20)">A</span>
+			</div>	
+			<div id="mainText">
+				<h1>Assistive Technology</h1>	
+				<p>Assistive Technology plays an important role in reducing the impact of disability on the academic success of students. The key role of the Assistive Technology Officer is to provide training, back up and support for students with disabilities. </p>
+				<p>Assistive technology is any device, piece of equipment, or software that can help reduce the negative impact of a disability on a student's academic success. Some examples of assistive technology include voice recognition software, large print display software, Braille embossing, and modified keyboards, mouse etc. </p>
+			</div>
+		</div>
+
+		<div id="footer">
+			<p>Call Us 1850 221 721&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;email: <a href="mailto:colm.bennett@ncirl.ie?Subject=NCI%20Disability%20page" target="_top">colm.bennett@ncirl</a></p>
+		</div>
+	</body>
+</HTML>

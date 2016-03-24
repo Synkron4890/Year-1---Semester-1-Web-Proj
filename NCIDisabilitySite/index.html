@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+	<head>
+	<meta charset="UTF-8">
+	<title>NCI Disability</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+	  $(function(){
+	   $('#picture').on('focus mouseenter', function(){
+		$("#slogan").slideDown(300);
+	   });
+	 });
+	 
+	 $(function(){
+	   $('#picture').on('focus mouseleave', function(){
+		$("#slogan").slideUp(300);
+	   });
+	 });
+	 
+	$(document).ready(function(){
+		$('#slogan').hide();
+	});
+
+	$(document).ready(function(){
+		$('#picture').hide();
+	});
+	  
+	$(document).ready(function(){
+		$("#picture").slideDown(3000);
+	  });
+	  
+	function resizeText(multiplier) {
+	parseFloat(multiplier);
+	document.getElementById("mainText").style.fontSize = multiplier + "px";
+	}
+	</script>
+	</head>
+	<body>
+		<div id="nav">
+			<ul>
+				<li><a href="librarysupp.html">Library Support</a></li>
+				<li><a href="academicsupp.html">Academic Support</a></li>
+				<li><a href="assistivetech.html">Assistive Technology</a></li>
+				<li><a href="needs.html">Needs Assessment</a></li>
+				<li><span id="selected"><a href="#">Main Page</a></span></li>
+			</ul> 
+		</div>
+
+		<div id="picture">
+			<div id="picture_main">
+				<div id="slogan">
+					<br/><br/><br/><br/><br/><br/>
+					<p>We are here to help</p>
+					<p>&bull;</p>
+					<p>&bull;</p>
+					<p>&bull;</p>
+					<p>&bull;</p>
+					<p>&bull;</p>
+					<p>&bull;</p>
+					<p>&bull;</p>
+					<p>&bull;</p>
+					<p>&bull;</p>
+				</div>
+			</div>	
+		</div>	
+
+		<div id="main">
+			<div id="logo">
+				<img src="img/nciLogo.png" alt="National College of Ireland">
+			</div>
+			<div id="textSize">
+				Text size: 	
+				<span id="SmallText" onclick="resizeText(12)">A</span>
+				<span id="NormalText" onclick="resizeText(14)">A</span>
+				<span id="LargeText" onclick="resizeText(20)">A</span>
+			</div>
+			<div id="mainText">
+				<h1>Disability Support Services</h1>
+				<p>National College of Ireland believe the most important first step is to make sure that you can access supports in an open relaxed, friendly and confidential way. The college is committed to providing equal access to education and equal opportunities for students with disabilities. NCI encourages students to be open about their disability and to discuss their individual needs with the Disability Officer. It is very important that students disclose a disability early in the academic year to ensure that necessary supports are provided. By delaying disclosure of a disability, students may be missing out on essential supports which can help with everything from participation in lectures right through to sitting exams. </p>
+			</div>
+		</div>
+
+		<div id="footer">
+			<p>Call Us 1850 221 721&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;email: <a href="mailto:colm.bennett@ncirl.ie?Subject=NCI%20Disability%20page" target="_top">colm.bennett@ncirl</a></p>
+		</div>
+	</body>
+</HTML>

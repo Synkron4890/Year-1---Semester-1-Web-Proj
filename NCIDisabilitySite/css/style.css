@@ -1,0 +1,170 @@
+body {
+	background-color: #FFFFFF;  
+	color: #282828 ;
+	font: 14px Arial,sans-serif;
+	margin: 0px;
+	width:950px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+	#nav {	
+		z-index: 1;
+		background-color: #CC9900;
+		width:950px;
+		position:fixed;
+		height: 70px;
+		margin: 0;
+		padding: 0;  
+	}
+
+		#nav ul {
+			margin: 0;
+			}
+			
+		#nav li {	
+			float: right;
+			padding : 10px 10px 10px 10px;
+			background-color: #CC9900;
+			margin: 0px;
+			color: #000000;
+			list-style-type: none;
+			}
+			
+		#nav li a {
+			padding : 10px 10px 50px 10px;
+			color: #FFFFFF;  
+			text-decoration: none;    
+			font-family: 'Noto Sans', sans-serif;
+			font-size: 16px;
+			}
+			
+		#nav li a:hover {
+			background-color: #CC6600   
+			}
+		
+		#selected{
+			background-color: #CC6600;
+			padding : 15px 0px 52px 0px;
+			height: 270px;
+		}
+		
+	#slogan {
+		width:950px;
+		height:470px;
+		background-color: #000000;
+		opacity: 0.7;
+		border-radius: 0px 0px 20px 20px;	
+		}
+
+	#slogan p{
+		line-height: 75%;
+		color: #FFFFFF;
+		font-weight: 900;
+		text-align: center;
+		font-size:35px;
+		padding:0px;
+		Margin:0px;
+	}
+	
+		
+	#picture_main {
+		background-image: url('../img/disabilitySupport-logo.jpg');
+		background-size: 950px;
+		border-radius: 0px 0px 20px 20px;
+		height: 470px;
+		width:950px;
+		}	
+				
+	#picture_needs {
+		background-image: url("../img/NeedsAssessment-logo.jpg");
+		background-size: 950px;
+		border-radius: 0px 0px 20px 20px;
+		height: 470px;
+		width:950px;
+		}	
+		
+	#picture_tech {
+		background-image: url("../img/AssistiveTechnology-logo.jpg");
+		background-size: 950px;
+		border-radius: 0px 0px 20px 20px;
+		height: 470px;
+		width:950px;
+		}	
+		
+	#picture_acad {
+		background-image: url("../img/AcademicSupport-logo.jpg");
+		background-size: 950px;
+		border-radius: 0px 0px 20px 20px;
+		height: 470px;
+		width:950px;
+		}	
+		
+	#picture_lib {
+		background-image: url("../img/LibSupp-logo.jpg");
+		background-size: 950px;
+		border-radius: 0px 0px 20px 20px;
+		height: 470px;
+		width:950px;
+		}	
+		
+	#main {
+		margin: 10px 10px;
+		text-align: justify;
+		}
+		
+	#textSize {
+		text-align: right;
+	}
+		
+	#SmallText {
+		font: 12px Arial,sans-serif;
+	}
+	#NormalText {
+		font: 16px Arial,sans-serif;
+	}
+	#LargeText {
+		font: 20px Arial,sans-serif;
+	}
+
+	#logo {
+		float:left;
+		width: 180px;
+		margin: 10px 10px;
+		}
+
+	#mainText {
+		border-left: 1px solid #ccc;
+		margin-left: 199px;
+		padding : 25px 20px ;
+		width: 700px;
+		}
+		
+	#mainText li {
+		list-style-type:circle;
+		}
+
+	#mainText h1 {
+		color: #003366;
+		font-size: 23px;
+		}
+
+	#footer {
+		background-color: #003366;
+		color: #FFFFFF;
+		width:950px;
+		height: 100px;
+		text-align: center;
+		font-family: 'Noto Sans', sans-serif;
+		font-size: 14px;
+		border-radius: 20px 20px 0px 0px;
+		}
+		
+	#footer p {
+		padding: 20px;
+		}
+
+	#footer p a {
+		text-decoration: none; 
+		color: #FFFFFF;
+		}
